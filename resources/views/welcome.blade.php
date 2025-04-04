@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegram Mini App</title>
-    {{-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> --}}
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
-    <script>
-        // Unset Telegram's background styling before rendering
-        if (window.Telegram && window.Telegram.WebApp) {
-            window.Telegram.WebApp.disableBackgroundOverride();
-        }
-    </script>
+    
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 
 </head>
@@ -25,12 +19,7 @@
             </div>
     </div>
 
-    {{-- <script>
-        const tg = window.Telegram.WebApp;
-        tg.ready();
-        const user = tg.initDataUnsafe?.user || {};
-        document.getElementById('app').innerHTML += `<div class="text-gray-700 text-lg mt-4">Hello, ${user.first_name || 'Guest'}!</div>`;
-    </script> --}}
+    
     <script>
     
     
