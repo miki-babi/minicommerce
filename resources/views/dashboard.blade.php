@@ -15,14 +15,12 @@
               </svg>
               
         </div>
-        <div cass="flex-row items-center">
-            <p>
-                {{ $user['first_name'] }}
+        <div class="flex flex-row items-center">
+            <p class="mr-4">
+            {{ $user['first_name'] }}
             </p> 
-            <img src="{{ $user['photo_url'] }}" alt="User Photo" class="rounded-full w-16 h-16 mt-2">
+            <img src="{{ $user['photo_url'] }}" alt="User Photo" class="rounded-full w-16 h-16">
         </div>
-        
-        {{-- {{ $user['first_name'] }} --}}
     </div>
 
     
