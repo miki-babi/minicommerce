@@ -9,7 +9,10 @@
 </head>
 <body class="bg-white" id="app">
     <div class="text-sky-500 text-2xl font-bold p-4 rounded-lg bg-gray-100 shadow-md">
-        {{ $user['first_name'] }}
+        <p>
+            Hello, {{ $user['first_name'] }}! Welcome to the Telegram Mini App.
+        </p>
+        {{-- {{ $user['first_name'] }} --}}
     </div>
 
     
