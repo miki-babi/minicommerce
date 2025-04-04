@@ -22,6 +22,9 @@
             <img src="{{ $photoUrl }}" alt="User Photo" class="rounded-full w-16 h-16">
         </div>
     </div>
+    <h1 class="text-2xl">
+        {{ Auth::user()->first_name }} {{ Auth::user()->last_name }}
+    </h1>
 
     
 </body>
