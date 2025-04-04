@@ -7,8 +7,8 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
-<body>
-<div>
+<body class="bg-white">
+<div class="text-sky-500 text-2xl">
     @php
         // dd($user);
     @endphp
