@@ -1,8 +1,8 @@
 <div>
     @php
-        dd($user);
+        // dd($user);
     @endphp
-    {{ $user }}
+    {{ $user['first_name'] }}
     <!-- Simplicity is the ultimate sophistication. - Leonardo da Vinci -->
     {{-- {{ $user }} {{ $user->last_name }} --}}
     <br>
