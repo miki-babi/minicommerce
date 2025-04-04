@@ -12,9 +12,11 @@
         {{ $user['first_name'] }}
     </div>
 
-    {{-- <script>
+    <script>
         const tg = window.Telegram.WebApp;
-        document.getElementById('app').style.backgroundColor = "#ffffff";
-    </script> --}}
+        tg.ready();
+        const user = tg.initDataUnsafe?.user || {};
+        document.getElementById('app').innerHTML += `<div class="text-gray-700 text-lg mt-4">Hello, ${user.first_name || 'Guest'}!</div>`;
+    </script>
 </body>
 </html>

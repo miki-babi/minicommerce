@@ -28,9 +28,11 @@
             </div>
     </div>
 
-    {{-- <script>
+    <script>
         const tg = window.Telegram.WebApp;
-        tg.disableBackgroundOverride(); // Prevents Telegram from changing your styles
-    </script> --}}
+        tg.ready();
+        const user = tg.initDataUnsafe?.user || {};
+        document.getElementById('app').innerHTML += `<div class="text-gray-700 text-lg mt-4">Hello, ${user.first_name || 'Guest'}!</div>`;
+    </script>
 </body>
 </html>
