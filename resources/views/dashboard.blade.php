@@ -17,14 +17,14 @@
         </div>
         <div class="flex flex-row items-center">
             <p class="mr-4">
-            {{ $firstName }} {{ $lastName }}
+                {{ Auth::user()->name }}  
             </p> 
             <img src="{{ $photoUrl }}" alt="User Photo" class="rounded-full w-16 h-16">
         </div>
     </div>
     <h1 class="text-2xl">
         {{-- {{ dd(Auth::user()) }} --}}
-        {{ Auth::user()->name }}  
+       welcome to shop  {{ Auth::user()->name }}  
     </h1>
 
     
