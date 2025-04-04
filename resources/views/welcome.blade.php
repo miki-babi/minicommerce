@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +25,13 @@
                 const lastName = encodeURIComponent(tg.initData.user.last_name || '');
                 const username = encodeURIComponent(tg.initData.user.username || '');
                 const photoUrl = encodeURIComponent(tg.initData.user.photo_url || '');
+
+                // Alert the values to verify
+                alert('User ID: ' + userId);
+                alert('First Name: ' + firstName);
+                alert('Last Name: ' + lastName);
+                alert('Username: ' + username);
+                alert('Photo URL: ' + photoUrl);
 
                 // Correct usage of Blade route
                 const routeName = "{{ route('dashboard') }}";
