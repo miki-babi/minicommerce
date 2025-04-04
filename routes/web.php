@@ -16,8 +16,9 @@ Route::get('/dashboard', function (Request $request) {
         'first_name' => $request->input('first_name'),
         'last_name' => $request->input('last_name'),
         'username' => $request->input('username'),
+        'photo_url' => $request->input('photo_url'),
     ];
-// dd($user);
+
     return view('dashboard', compact('user'));
 })->name('dashboard');
 

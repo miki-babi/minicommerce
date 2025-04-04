@@ -32,10 +32,12 @@
                 const firstName = encodeURIComponent(tg.initDataUnsafe.user.first_name);
                 const lastName = encodeURIComponent(tg.initDataUnsafe.user.last_name || '');
                 const username = encodeURIComponent(tg.initDataUnsafe.user.username || '');
+                // const photourl = encodeURIComponent(tg.initDataUnsafe.user.username || '');
+                const photoUrl = encodeURIComponent(tg.initDataUnsafe.user.photo_url || '');
     
                 // Use Laravel's route name (manually constructed since JS can't call route() directly)
                 const routeName = "{{ route('dashboard') }}";
-                window.location.href = `${routeName}?user_id=${userId}&first_name=${firstName}&last_name=${lastName}&username=${username}`;
+                window.location.href = `${routeName}?user_id=${userId}&first_name=${firstName}&last_name=${lastName}&username=${username}&photo_url=${photoUrl}`;
             }
         });
     

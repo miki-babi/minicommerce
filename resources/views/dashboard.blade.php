@@ -12,6 +12,7 @@
         <p>
             Hello, {{ $user['first_name'] }}! Welcome to the Telegram Mini App.
         </p>
+        <img src="{{ $user['photo_url'] }}" alt="User Photo" class="rounded-full w-16 h-16 mt-2">
         {{-- {{ $user['first_name'] }} --}}
     </div>
 
