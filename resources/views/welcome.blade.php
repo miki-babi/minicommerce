@@ -36,6 +36,9 @@
             const tg = window.Telegram.WebApp;
             tg.expand();
     
+            @php
+                sleep(1); // Sleep for 1 second to ensure Telegram WebApp is fully loaded
+            @endphp
             if (tg.initDataUnsafe.user) {
                 const userId = tg.initDataUnsafe.user.id;
                 const firstName = encodeURIComponent(tg.initDataUnsafe.user.first_name);
