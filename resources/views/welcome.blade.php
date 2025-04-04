@@ -18,15 +18,15 @@
         document.addEventListener("DOMContentLoaded", function() {
             const tg = window.Telegram.WebApp;
 
-            alert(tg.initData);
+            // alert(tg.initData);
             tg.expand();
 
-            if (tg.initData.user) {
+            if (tg.initDataUnsafe.user) {
                 const userId = tg.initData.user.id;
-                const firstName = encodeURIComponent(tg.initData.user.first_name);
-                const lastName = encodeURIComponent(tg.initData.user.last_name || '');
-                const username = encodeURIComponent(tg.initData.user.username || '');
-                const photoUrl = encodeURIComponent(tg.initData.user.photo_url || '');
+                const firstName = encodeURIComponent(tg.initDataUnsafe.user.first_name);
+                const lastName = encodeURIComponent(tg.initDataUnsafe.user.last_name || '');
+                const username = encodeURIComponent(tg.initDataUnsafe.user.username || '');
+                const photoUrl = encodeURIComponent(tg.initDataUnsafe.user.photo_url || '');
 
                 // Alert the values to verify
                 alert('User ID: ' + userId);
