@@ -21,18 +21,37 @@
     <div class="text-sky-500 text-2xl">
         {{-- {{ $user['first_name'] }} --}}
         <div class="p-4 rounded-lg bg-gray-100 shadow-md">
-            <h1 class="text-2xl font-bold">Welcome to the Telegram Mini App</h1>
-            <p class="mt-2 text-gray-700">This is a simple example of a Telegram mini app.</p>
-            <p class="mt-2 text-gray-700">You can customize this app to suit your needs.</p>
-
             </div>
     </div>
 
-    <script>
+    {{-- <script>
         const tg = window.Telegram.WebApp;
         tg.ready();
         const user = tg.initDataUnsafe?.user || {};
         document.getElementById('app').innerHTML += `<div class="text-gray-700 text-lg mt-4">Hello, ${user.first_name || 'Guest'}!</div>`;
-    </script>
+    </script> --}}
+    <script>
+    
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            const tg = window.Telegram.WebApp;
+            tg.expand();
+    
+            if (tg.initDataUnsafe.user) {
+                const userId = tg.initDataUnsafe.user.id;
+                const firstName = encodeURIComponent(tg.initDataUnsafe.user.first_name);
+                const lastName = encodeURIComponent(tg.initDataUnsafe.user.last_name || '');
+                const username = encodeURIComponent(tg.initDataUnsafe.user.username || '');
+    
+                // Use Laravel's route name (manually constructed since JS can't call route() directly)
+                const routeName = "{{ route('dashboard') }}";
+                window.location.href = ${routeName}?user_id=${userId}&first_name=${firstName}&last_name=${lastName}&username=${username};
+            }
+        });
+    
+        
+    
+    
+        </script>
 </body>
 </html>

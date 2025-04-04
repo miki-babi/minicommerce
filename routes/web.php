@@ -22,10 +22,4 @@ Route::get('/dashboard', function (Request $request) {
 })->name('dashboard');
 
 
-// Route::get('/dashboard', function (Request $request) {
-//     // Decode the Telegram data from the query string
-//     $telegramData = json_decode($request->input('telegram_data'), true);
-//     $data=$telegramData['user']['first_name'];
-// dd( $data);
-//     return view('dashboard', compact('telegramData'));
-// })->name('dashboard');
+
