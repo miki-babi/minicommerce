@@ -12,9 +12,9 @@
         {{ $user['first_name'] }}
     </div>
 
-    {{-- <script>
+    <script>
         const tg = window.Telegram.WebApp;
         document.getElementById('app').style.backgroundColor = tg.themeParams.bg_color || "#ffffff";
-    </script> --}}
+    </script>
 </body>
 </html>
