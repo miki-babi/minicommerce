@@ -15,7 +15,7 @@
               </svg>
               
         </div>
-        <div cass="flex items-center">
+        <div cass="flex-col items-center">
             <p>
                 {{ $user['first_name'] }}
             </p> 
