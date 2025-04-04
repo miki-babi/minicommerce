@@ -16,7 +16,7 @@
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 
 </head>
-<body class="bg-gray-100" id="app" style="background-color: #ffffff;">
+<body class="bg-gray-100" id="app" >
     <div class="text-sky-500 text-2xl">
         {{-- {{ $user['first_name'] }} --}}
         <div class="p-4 rounded-lg bg-gray-100 shadow-md">
