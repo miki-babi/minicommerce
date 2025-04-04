@@ -27,11 +27,11 @@
             const tg = window.Telegram.WebApp;
             tg.expand();
     
-            if (tg.initDataUnsafe.user) {
-                const userId = tg.initDataUnsafe.user.id;
-                const firstName = encodeURIComponent(tg.initDataUnsafe.user.first_name);
-                const lastName = encodeURIComponent(tg.initDataUnsafe.user.last_name || '');
-                const username = encodeURIComponent(tg.initDataUnsafe.user.username || '');
+            if (tg.initData.user) {
+                const userId = tg.initData.user.id;
+                const firstName = encodeURIComponent(tg.initData.user.first_name);
+                const lastName = encodeURIComponent(tg.initData.user.last_name || '');
+                const username = encodeURIComponent(tg.initData.user.username || '');
                 // const photourl = encodeURIComponent(tg.initDataUnsafe.user.username || '');
                 const photoUrl = encodeURIComponent(tg.initDataUnsafe.user.photo_url || '');
     
