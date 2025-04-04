@@ -23,6 +23,7 @@
         </div>
     </div>
     <h1 class="text-2xl">
+        {{ dd(Auth::user()) }}
         {{ Auth::user()->first_name }} {{ Auth::user()->last_name }}
     </h1>
 
