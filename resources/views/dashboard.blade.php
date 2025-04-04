@@ -7,18 +7,14 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
-<body class="bg-white">
-<div class="text-sky-500 text-2xl">
-    @php
-        // dd($user);
-    @endphp
-    {{ $user['first_name'] }}
-    <!-- Simplicity is the ultimate sophistication. - Leonardo da Vinci -->
-    {{-- {{ $user }} {{ $user->last_name }} --}}
-    <br>
-    {{-- {{ $user->username }} --}}
-    <br>
-    {{-- {{ $user->id }} --}}
-</div>
-<body>
-<html>
+<body class="bg-white" id="app">
+    <div class="text-sky-500 text-2xl">
+        {{ $user['first_name'] }}
+    </div>
+
+    {{-- <script>
+        const tg = window.Telegram.WebApp;
+        document.getElementById('app').style.backgroundColor = tg.themeParams.bg_color || "#ffffff";
+    </script> --}}
+</body>
+</html>
