@@ -9,7 +9,13 @@
 </head>
 <body class="bg-gray-100" id="app">
     <div class="text-sky-500 text-2xl">
-        {{ $user['first_name'] }}
+        {{-- {{ $user['first_name'] }} --}}
+        <div class="p-4 rounded-lg bg-gray-100 shadow-md">
+            <h1 class="text-2xl font-bold">Welcome to the Telegram Mini App</h1>
+            <p class="mt-2 text-gray-700">This is a simple example of a Telegram mini app.</p>
+            <p class="mt-2 text-gray-700">You can customize this app to suit your needs.</p>
+
+            </div>
     </div>
 
     <script>
