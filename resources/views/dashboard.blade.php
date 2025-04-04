@@ -14,7 +14,7 @@
 
     <script>
         const tg = window.Telegram.WebApp;
-        document.getElementById('app').style.backgroundColor = tg.themeParams.bg_color || "#ffffff";
+        document.getElementById('app').style.backgroundColor = "#ffffff";
     </script>
 </body>
 </html>
