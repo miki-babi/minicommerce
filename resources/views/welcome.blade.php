@@ -35,7 +35,7 @@
     
                 // Use Laravel's route name (manually constructed since JS can't call route() directly)
                 const routeName = "{{ route('dashboard') }}";
-                window.location.href = ${routeName}?user_id=${userId}&first_name=${firstName}&last_name=${lastName}&username=${username};
+                window.location.href = `${routeName}?user_id=${userId}&first_name=${firstName}&last_name=${lastName}&username=${username}`;
             }
         });
     
