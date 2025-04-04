@@ -17,9 +17,9 @@
         </div>
         <div class="flex flex-row items-center">
             <p class="mr-4">
-            {{ $user['first_name'] }}
+            {{ $firstName }} {{ $lastName }}
             </p> 
-            <img src="{{ $user['photo_url'] }}" alt="User Photo" class="rounded-full w-16 h-16">
+            <img src="{{ $photoUrl }}" alt="User Photo" class="rounded-full w-16 h-16">
         </div>
     </div>
 
