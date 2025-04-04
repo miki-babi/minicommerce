@@ -12,11 +12,6 @@
         {{ $user['first_name'] }}
     </div>
 
-    <script>
-        const tg = window.Telegram.WebApp;
-        tg.ready();
-        const user = tg.initDataUnsafe?.user || {};
-        document.getElementById('app').innerHTML += `<div class="text-gray-700 text-lg mt-4">Hello, ${user.first_name || 'Guest'}!</div>`;
-    </script>
+    
 </body>
 </html>
