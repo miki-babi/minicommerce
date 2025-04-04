@@ -1,8 +1,12 @@
 <div>
+    @php
+        dd($user);
+    @endphp
+    {{ $user }}
     <!-- Simplicity is the ultimate sophistication. - Leonardo da Vinci -->
-    {{ $user->first_name }} {{ $user->last_name }}
+    {{-- {{ $user }} {{ $user->last_name }} --}}
     <br>
-    {{ $user->username }}
+    {{-- {{ $user->username }} --}}
     <br>
-    {{ $user->id }}
+    {{-- {{ $user->id }} --}}
 </div>
