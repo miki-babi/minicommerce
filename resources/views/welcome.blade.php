@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegram Mini App</title>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <script>
+        // Unset Telegram's background styling before rendering
+        if (window.Telegram && window.Telegram.WebApp) {
+            window.Telegram.WebApp.disableBackgroundOverride();
+        }
+    </script>
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 
-    <script src="https://telegram.org/js/telegram-web-app.js">tg.disableBackgroundOverride();</script>
 </head>
 <body class="bg-gray-100" id="app">
     <div class="text-sky-500 text-2xl">
