@@ -5,7 +5,7 @@ use Illuminate\Http\Request;
 
 
 Route::get('/', function () {
-    dd('Welcome to the Telegram Bot!');
+    // dd('Welcome to the Telegram Bot!');
     return view('welcome');
 });
 Route::get('/dashboard', function (Request $request) {
