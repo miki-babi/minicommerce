@@ -28,9 +28,7 @@
 
     </div>
 
-    @php
-        sleep(3);
-    @endphp
+    
     <script>
     
     
