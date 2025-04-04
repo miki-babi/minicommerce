@@ -8,7 +8,7 @@
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
 <body class="bg-white" id="app">
-    <div class="text-sky-500 text-2xl">
+    <div class="text-sky-500 text-2xl font-bold p-4 rounded-lg bg-gray-100 shadow-md">
         {{ $user['first_name'] }}
     </div>
 
