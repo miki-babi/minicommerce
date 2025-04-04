@@ -17,6 +17,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const tg = window.Telegram.WebApp;
+            alert(tg);
             tg.expand();
 
             if (tg.initData.user) {
