@@ -8,27 +8,29 @@
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
 <body>
-    <h1>Welcome, <span id="user-name">User</span></h1>
-    <p>Your Telegram ID: <span id="user-id"></span></p>
+    <div class="text-sky-500 text-2xl font-bold p-4 rounded-lg bg-gray-100 shadow-md">
 
+    <h1 class="">Welcome, <span id="user-name">User</span></h1>
+    <p>Your Telegram ID: <span id="user-id"></span></p>
+</div>
     <script>
     
     
-    document.addEventListener("DOMContentLoaded", function() {
-        const tg = window.Telegram.WebApp;
-        // tg.expand();
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     const tg = window.Telegram.WebApp;
+    //     // tg.expand();
 
-        if (tg.initDataUnsafe.user) {
-            const userId = tg.initDataUnsafe.user.id;
-            const firstName = encodeURIComponent(tg.initDataUnsafe.user.first_name);
-            const lastName = encodeURIComponent(tg.initDataUnsafe.user.last_name || '');
-            const username = encodeURIComponent(tg.initDataUnsafe.user.username || '');
+    //     if (tg.initDataUnsafe.user) {
+    //         const userId = tg.initDataUnsafe.user.id;
+    //         const firstName = encodeURIComponent(tg.initDataUnsafe.user.first_name);
+    //         const lastName = encodeURIComponent(tg.initDataUnsafe.user.last_name || '');
+    //         const username = encodeURIComponent(tg.initDataUnsafe.user.username || '');
 
 // Use Laravel's route name (manually constructed since JS can't call route() directly)
-            const routeName = "{{ route('dashboard') }}";
-            window.location.href = `${routeName}?user_id=${userId}&first_name=${firstName}&last_name=${lastName}&username=${username}`;
-        }
-    });
+    //         const routeName = "{{ route('dashboard') }}";
+    //         window.location.href = `${routeName}?user_id=${userId}&first_name=${firstName}&last_name=${lastName}&username=${username}`;
+    //     }
+    // });
 
     
 
