@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegram Mini App</title>
 
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    {{-- <script src="https://telegram.org/js/telegram-web-app.js"></script> --}}
 
     <script>
         // Unset Telegram's background styling before rendering
@@ -27,9 +27,9 @@
             </div>
     </div>
 
-    <script>
+    {{-- <script>
         const tg = window.Telegram.WebApp;
         tg.disableBackgroundOverride(); // Prevents Telegram from changing your styles
-    </script>
+    </script> --}}
 </body>
 </html>
