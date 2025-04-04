@@ -24,7 +24,7 @@
     </div>
     <h1 class="text-2xl">
         {{ dd(Auth::user()) }}
-        {{ Auth::user()->name }} {{ Auth::user()-> }}
+        {{ Auth::user()->name }}  
     </h1>
 
     
