@@ -24,7 +24,7 @@
     </div>
     <h1 class="text-2xl">
         {{-- {{ dd(Auth::user()) }} --}}
-       welcome to shop  {{ Auth::user()->name }}  
+       welcome   {{ Auth::user()->name }}  
     </h1>
 
     
