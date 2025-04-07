@@ -26,19 +26,19 @@
     <div  x-show="open">
         <ul>
             <li class="p-2 hover:bg-gray-200 cursor-pointer" @click="open = !open">
-                <a href="{{ route('dashboard') }}">Dashboard</a>
+                <a href="#">Dashboard</a>
             </li>
             <li class="p-2 hover:bg-gray-200 cursor-pointer" @click="open = !open">
-                <a href="{{ route('logout') }}">Logout</a>
+                <a href="#">Logout</a>
             </li>
             <li class="p-2 hover:bg-gray-200 cursor-pointer" @click="open = !open">
-                <a href="{{ route('profile') }}">Profile</a>
+                <a href="#">Profile</a>
             </li>
             <li class="p-2 hover:bg-gray-200 cursor-pointer" @click="open = !open">
-                <a href="{{ route('settings') }}">Settings</a>
+                <a href="#">Settings</a>
             </li>
             <li class="p-2 hover:bg-gray-200 cursor-pointer" @click="open = !open">
-                <a href="{{ route('help') }}">Help</a>
+                <a href="#">Help</a>
             </li>
         </ul>
     </div>
