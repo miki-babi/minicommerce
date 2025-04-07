@@ -23,7 +23,7 @@
             <img src="{{ $photoUrl }}" alt="User Photo" class="rounded-full w-16 h-16">
         </div>
     </div>
-    <div  x-show="open">
+    <div  x-show="open"  class ="absolute top-16 right-4 bg-white shadow-lg rounded-lg p-4 z-10">
         <ul>
             <li class="p-2 hover:bg-gray-200 cursor-pointer" @click="open = !open">
                 <a href="#">Dashboard</a>
