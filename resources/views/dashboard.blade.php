@@ -9,8 +9,8 @@
 </head>
 <body x-data= "{
      open: false,
-}" class="bg-white" id="app" @click="open = false">
-    <div  @click="open = false" class="text-sky-500 text-2xl font-bold p-4 rounded-lg bg-gray-100 shadow-md flex items-center justify-between">
+}" class="bg-white" id="app">
+    <div class="text-sky-500 text-2xl font-bold p-4 rounded-lg bg-gray-100 shadow-md flex items-center justify-between">
         <div class="text-black"  @click="open = !open">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -24,6 +24,11 @@
         </div>
     </div>
     <div  x-show="open"  class ="absolute top-16 left-4 bg-white shadow-lg rounded-lg p-4 z-10">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>              
+        </div>
         <ul>
             <li class="p-2 hover:bg-gray-200 cursor-pointer" @click="open = !open">
                 <a href="#">Dashboard</a>
