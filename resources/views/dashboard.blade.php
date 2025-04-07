@@ -25,7 +25,7 @@
     </div>
     <div  x-show="open"  class ="absolute top-16 left-4 bg-white shadow-lg rounded-lg p-4 z-10">
         <div class="flex justify-end items-center mb-4">
-            <div class="p-2 hover:bg-gray-200  border-2 rounded-full cursor-pointer" @click="open = !open">
+            <div class="p-2 hover:bg-gray-200  border-2 rounded-md cursor-pointer" @click="open = !open">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                   </svg>   
