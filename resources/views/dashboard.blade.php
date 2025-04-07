@@ -23,7 +23,26 @@
             <img src="{{ $photoUrl }}" alt="User Photo" class="rounded-full w-16 h-16">
         </div>
     </div>
-    <h1  x-show="open"  class="text-2xl">
+    <div  x-show="open">
+        <ul>
+            <li class="p-2 hover:bg-gray-200 cursor-pointer" @click="open = !open">
+                <a href="{{ route('dashboard') }}">Dashboard</a>
+            </li>
+            <li class="p-2 hover:bg-gray-200 cursor-pointer" @click="open = !open">
+                <a href="{{ route('logout') }}">Logout</a>
+            </li>
+            <li class="p-2 hover:bg-gray-200 cursor-pointer" @click="open = !open">
+                <a href="{{ route('profile') }}">Profile</a>
+            </li>
+            <li class="p-2 hover:bg-gray-200 cursor-pointer" @click="open = !open">
+                <a href="{{ route('settings') }}">Settings</a>
+            </li>
+            <li class="p-2 hover:bg-gray-200 cursor-pointer" @click="open = !open">
+                <a href="{{ route('help') }}">Help</a>
+            </li>
+        </ul>
+    </div>
+    <h1   class="text-2xl">
         {{-- {{ dd(Auth::user()) }} --}}
        welcome   {{ Auth::user()->name }}  
     </h1>
